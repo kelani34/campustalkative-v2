@@ -31,7 +31,12 @@ const CommunitySlider = () => {
         <Slider autoplay={5} infinite={true}>
           {slides.map((slide, index) => (
             <div key={index}>
-              <Image src={slide.img} alt={`Community slide ${index + 2}`} />
+              <Image
+                src={slide.img}
+                alt={`Community slide ${index + 2}`}
+                width="100%"
+                height="100%"
+              />
             </div>
           ))}
         </Slider>
@@ -69,9 +74,5 @@ const Section = styled.section`
     .slider {
       height: 300px;
     }
-  }
-  img {
-    height: 100%;
-    width: 100%;
   }
 `;

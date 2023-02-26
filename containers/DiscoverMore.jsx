@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const LearnMoreCallToAction = () => {
+const DiscoverMore = () => {
   return (
     <Section>
       <div className="container">
@@ -11,7 +11,7 @@ const LearnMoreCallToAction = () => {
   );
 };
 
-export default LearnMoreCallToAction;
+export default DiscoverMore;
 
 const Section = styled.section`
   .container {

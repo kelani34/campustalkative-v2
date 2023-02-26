@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import company from "../../../assets/company.png";
+import sponsors from "../../../assets/company.png";
 import Image from "next/image";
 
-const Company = () => {
+const Collaborations = () => {
   return (
     <Section>
       <Container>
@@ -16,7 +16,7 @@ const Company = () => {
         </p>
         <div className="cta__partnership-containers">
           <div className="max-w-[150px]">
-            <Image src={company} alt="company" />
+            <Image src={sponsors} alt="Campustalkative sponsors" />
           </div>
         </div>
       </Container>
@@ -24,7 +24,7 @@ const Company = () => {
   );
 };
 
-export default Company;
+export default Collaborations;
 
 const Section = styled.section`
   max-width: 1128px;

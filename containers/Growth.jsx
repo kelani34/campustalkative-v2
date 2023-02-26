@@ -6,7 +6,7 @@ import earthSM from "../../../public/earth-sm.png";
 import line from "../../../public/line.png";
 import impact from "../../../public/impact.png";
 
-const Progress = () => {
+const Growth = () => {
   return (
     <Section id="growth">
       <Container>
@@ -27,16 +27,16 @@ const Progress = () => {
           <img src={impact} alt="imact" />
         </div>
         <div className="img-box">
-          <Image src={line} className="line" alt="line" />
-          <Image src={earth} className="earth" alt="earth" />
-          <Image src={earthSM} className="earth-sm" alt="earth" />
+          <Image src={line} className="line" alt="Decorative line graphic" />
+          <Image src={earth} className="earth" alt="World map" />
+          <Image src={earthSM} className="earth-sm" alt="Small world map" />
         </div>
       </Container>
     </Section>
   );
 };
 
-export default Progress;
+export default Growth;
 
 const Section = styled.section`
   overflow: hidden;

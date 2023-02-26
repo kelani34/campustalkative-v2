@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../../../shared/Button";
-import home from "../../../assets/home-img.png";
+import members from "../../../assets/home-img.png";
 import Link from "next/link";
 import Image from "next/image";
 
-const Header = () => {
+const HeroSection = () => {
   return (
     <Section>
       <Container>
@@ -24,14 +24,14 @@ const Header = () => {
           </div>
         </div>
         <Img>
-          <Image src={home} alt="home" />
+          <Image src={members} alt="campustalkative branding image with comminuty members" />
         </Img>
       </Container>
     </Section>
   );
 };
 
-export default Header;
+export default HeroSection;
 
 const Section = styled.section`
   max-width: 1128px;
