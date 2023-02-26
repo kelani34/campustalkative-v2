@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaTiktok } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import contact from "../assets/contact-img.png";
+import contact from "@/assets/contact-img.png";
 import Image from "next/image";
 import {
   AiFillInstagram,
@@ -14,7 +14,7 @@ const ContactComponent = () => {
     <Section>
       <Container>
         <h2>
-          Say hello at <span>campustalkative@gmail.com</span>
+          Say hello at <span>hi@campustalkative.net</span>
         </h2>
         <Image
           src={contact}
