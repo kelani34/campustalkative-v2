@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import sponsors from "../../../assets/company.png";
+import sponsors from "@/assets/company.png";
 import Image from "next/image";
 
 const Collaborations = () => {

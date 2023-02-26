@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import logo from "../assets/app_logo.png";
+import logo from "@/assets/app_logo.png";
 
 const FooterComponent = () => {
   return (

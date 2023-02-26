@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import CountUp from "react-countup";
 import Image from "next/image";
-import earth from "../../../public/earth.png";
-import earthSM from "../../../public/earth-sm.png";
-import line from "../../../public/line.png";
-import impact from "../../../public/impact.png";
+import WorldMap from "@/assets/earth.png";
+import WorldMapsm from "@/assets/earth-sm.png";
+import DecorativeLine from "@/assets/line.png";
+import ImpactStatistics from "@/assets/impact.png";
 
 const Growth = () => {
   return (
@@ -24,12 +24,16 @@ const Growth = () => {
               <h2>Members and counting</h2>
             </span>
           </div>
-          <img src={impact} alt="imact" />
+          <img src={ImpactStatistics} alt="CampusTalkative impact statistics" />
         </div>
         <div className="img-box">
-          <Image src={line} className="line" alt="Decorative line graphic" />
-          <Image src={earth} className="earth" alt="World map" />
-          <Image src={earthSM} className="earth-sm" alt="Small world map" />
+          <Image
+            src={DecorativeLine}
+            className="line"
+            alt="Decorative line graphic"
+          />
+          <Image src={WorldMap} className="earth" alt="World map" />
+          <Image src={WorldMapsm} className="earth-sm" alt="Small world map" />
         </div>
       </Container>
     </Section>
@@ -42,50 +46,6 @@ const Section = styled.section`
   overflow: hidden;
   max-width: 1140px;
   margin: auto;
-  .container {
-    display: flex;
-    margin: 20px;
-    position: relative;
-    @media screen and (max-width: 650px) {
-      flex-direction: column-reverse;
-    }
-    .content {
-      margin: 70px 0;
-      @media screen and (max-width: 650px) {
-        margin: 22px 0;
-      }
-    }
-    h2 {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 160%;
-      color: #8c5a0d;
-      @media screen and (max-width: 650px) {
-        font-size: 12px;
-        line-height: 19px;
-      }
-    }
-    h3 {
-      max-width: 502px;
-      font-family: "Sora";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 140%;
-      color: #050300;
-      max-width: 502px;
-      span {
-        color: #f2aa3c;
-      }
-
-      @media screen and (max-width: 650px) {
-        font-size: 20px;
-        line-height: 28px;
-      }
-    }
-  }
   .counter {
     display: block;
     align-items: center;
@@ -135,6 +95,50 @@ const Section = styled.section`
   img {
     @media screen and (max-width: 650px) {
       width: 100%;
+    }
+  }
+`;
+const Container = styled.div`
+  display: flex;
+  margin: 20px;
+  position: relative;
+  @media screen and (max-width: 650px) {
+    flex-direction: column-reverse;
+  }
+  .content {
+    margin: 70px 0;
+    @media screen and (max-width: 650px) {
+      margin: 22px 0;
+    }
+  }
+  h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #8c5a0d;
+    @media screen and (max-width: 650px) {
+      font-size: 12px;
+      line-height: 19px;
+    }
+  }
+  h3 {
+    max-width: 502px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #050300;
+    max-width: 502px;
+    span {
+      color: #f2aa3c;
+    }
+
+    @media screen and (max-width: 650px) {
+      font-size: 20px;
+      line-height: 28px;
     }
   }
 `;

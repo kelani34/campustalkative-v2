@@ -1,80 +1,74 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "@/assets/app_logo.png";
-import logo169 from "../assets/logo169.png";
+import logo169 from "@/assets/logo169.png";
+import { FaTiktok } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import Button from "@/shared/Button";
+import Link from "next/link";
+import Image from "next/image";
 import {
   AiFillInstagram,
   AiFillTwitterCircle,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { FaTiktok } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import Button from "../shared/Button";
-import Link from "next/link";
-import Image from "next/image";
 
 const Navbar = (props) => {
   return (
     <Nav>
       <div className="container">
         <Link href="/" className="cta__navbar-img-container__large">
-          <a>
-            <Image
-              src={logo}
-              alt="CampusTalkative logo"
-              width={195}
-              height={36}
-            />
-          </a>
+          <Image
+            src={logo}
+            alt="CampusTalkative logo"
+            width={195}
+            height={36}
+          />
         </Link>
         <Link href="/" className="cta__navbar-img-container__small">
-          <a>
-            <Image
-              src={logo169}
-              alt="CampusTalkative logo"
-              width={40}
-              height={40}
-            />
-          </a>
+          <Image
+            src={logo169}
+            alt="CampusTalkative logo"
+            width={40}
+            height={40}
+          />
         </Link>
         <div className="cta__navbar-items-container">
           <IconContext.Provider value={{ color: "#666056", size: "18px" }}>
             <div className="cta__navbar-items-icons">
-              <a
+              <Link
                 href="https://instagram.com/campustalkative"
                 target="_blank"
                 rel="noreferrer"
               >
                 <AiFillInstagram aria-label="Instagram" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/campustalkative"
                 target="_blank"
                 rel="noreferrer"
               >
                 <AiFillTwitterCircle aria-label="Twitter" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.tiktok.com/@campustalkative?_t=8ZDKhEhZNP3&_r=1"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaTiktok aria-label="TikTok" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/company/campustalkative/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <AiFillLinkedin aria-label="LinkedIn" />
-              </a>
+              </Link>
             </div>
           </IconContext.Provider>
           <div className="cta__navbar-items-btn">
-            <Link href="/join-us">
-              <a>
-                <Button text="Join community" />
-              </a>
+            <Link href="/comunity">
+              <Button text="Join community" />
             </Link>
           </div>
         </div>

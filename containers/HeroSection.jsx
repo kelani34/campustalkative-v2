@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../../../shared/Button";
-import members from "../../../assets/home-img.png";
+import Button from "@/shared/Button";
+import members from "@/assets/home-img.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,7 +24,10 @@ const HeroSection = () => {
           </div>
         </div>
         <Img>
-          <Image src={members} alt="campustalkative branding image with comminuty members" />
+          <Image
+            src={members}
+            alt="campustalkative branding image with comminuty members"
+          />
         </Img>
       </Container>
     </Section>
