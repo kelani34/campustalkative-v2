@@ -1,4 +1,4 @@
-import { ContactComponent, Navbar } from "@/components";
+import { ContactComponent, Footer, Navbar } from "@/components";
 import {
   Collaborations,
   Community,
@@ -24,6 +24,7 @@ const Base = () => (
     <Community />
     <CommunitySlider />
     <ContactComponent />
+    <Footer />
   </motion.div>
 );
 

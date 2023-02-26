@@ -4,10 +4,11 @@ import Button from "@/shared/Button";
 import members from "@/assets/home-img.png";
 import Link from "next/link";
 import Image from "next/image";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const HeroSection = () => {
   return (
-    <Section>
+    <Section data-aos="fade-up" data-aos-duration="2000">
       <Container>
         <div className="header-text">
           <h1>
@@ -19,7 +20,7 @@ const HeroSection = () => {
               <Button text="Join community" />
             </Link>
             <a href="#growth">
-              <Button outline text="See our growth" />
+              <Button outline text="See our growth" img={AiOutlineArrowDown} />
             </a>
           </div>
         </div>
@@ -27,6 +28,8 @@ const HeroSection = () => {
           <Image
             src={members}
             alt="campustalkative branding image with comminuty members"
+            height="auto"
+            width="auto"
           />
         </Img>
       </Container>
@@ -69,6 +72,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
   }
   .btn {
     display: flex;

@@ -11,7 +11,7 @@ import {
 
 const ContactComponent = () => {
   return (
-    <Section>
+    <Section data-aos="fade-up" data-aos-duration="1000">
       <Container>
         <h2>
           Say hello at <span>hi@campustalkative.net</span>

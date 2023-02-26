@@ -8,7 +8,7 @@ import ImpactStatistics from "@/assets/impact.png";
 
 const Growth = () => {
   return (
-    <Section id="growth">
+    <Section id="growth" data-aos="fade-up" data-aos-duration="2000">
       <Container>
         <div className="content">
           <div>
@@ -24,7 +24,10 @@ const Growth = () => {
               <h2>Members and counting</h2>
             </span>
           </div>
-          <img src={ImpactStatistics} alt="CampusTalkative impact statistics" />
+          <Image
+            src={ImpactStatistics}
+            alt="CampusTalkative impact statistics"
+          />
         </div>
         <div className="img-box">
           <Image

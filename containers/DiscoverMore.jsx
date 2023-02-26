@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DiscoverMore = () => {
   return (
-    <Section>
+    <Section data-aos="fade-up" data-aos-duration="2000">
       <div className="container">
         <h2>Want to learn more </h2>
       </div>

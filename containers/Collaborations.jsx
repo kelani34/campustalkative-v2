@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Collaborations = () => {
   return (
-    <Section>
+    <Section data-aos="fade-up" data-aos-duration="2000">
       <Container>
         <h2>Collaboration and growth</h2>
         <p>
@@ -16,7 +16,12 @@ const Collaborations = () => {
         </p>
         <div className="cta__partnership-containers">
           <div className="max-w-[150px]">
-            <Image src={sponsors} alt="Campustalkative sponsors" />
+            <Image
+              src={sponsors}
+              alt="Campustalkative sponsors"
+              width={110}
+              height={80}
+            />
           </div>
         </div>
       </Container>

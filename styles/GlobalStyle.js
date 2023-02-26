@@ -35,4 +35,15 @@ export const GlobalStyle = createGlobalStyle`
     #root{
         height: 60%;
     }
+
+    .fade-up {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .fade-up.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+        transition-property: opacity, transform;
+    }
 `;

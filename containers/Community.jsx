@@ -7,6 +7,8 @@ const Community = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
+      data-aos="fade-up"
+      data-aos-duration="2000"
     >
       <Container>
         <Content>

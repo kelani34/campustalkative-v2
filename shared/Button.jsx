@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-const Button = ({ outline, text, form }) => {
+const Button = ({ outline, text, form, img }) => {
   return (
     <StyledButton
       whileHover={{ scale: 1.1 }}
@@ -10,6 +10,7 @@ const Button = ({ outline, text, form }) => {
       form={form}
     >
       {text}
+      {img}
     </StyledButton>
   );
 };

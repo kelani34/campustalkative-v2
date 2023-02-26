@@ -18,15 +18,15 @@ const CommunitySlider = () => {
     { img: slides.slide9 },
   ];
   return (
-    <Section>
+    <Section data-aos="fade-up" data-aos-duration="2000">
       <Slider autoplay={5} infinite={true}>
         {sliders.map((slide, index) => (
           <div key={index}>
             <Image
               src={slide.img}
               alt={`Community slide ${index + 2}`}
-              width="100%"
-              height="100%"
+              width="auto"
+              height={600}
             />
           </div>
         ))}

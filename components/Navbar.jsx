@@ -15,22 +15,22 @@ import {
 
 const Navbar = (props) => {
   return (
-    <Nav>
+    <Nav data-aos="fade-up" data-aos-duration="2000">
       <div className="container">
         <Link href="/" className="cta__navbar-img-container__large">
           <Image
             src={logo}
             alt="CampusTalkative logo"
             width={195}
-            height={36}
+            height="auto"
           />
         </Link>
         <Link href="/" className="cta__navbar-img-container__small">
           <Image
             src={logo169}
             alt="CampusTalkative logo"
-            width={40}
-            height={40}
+            width="auto"
+            height="auto"
           />
         </Link>
         <div className="cta__navbar-items-container">
