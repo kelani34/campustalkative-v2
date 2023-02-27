@@ -19,7 +19,7 @@
     "next-google-fonts": "^2.2.0",
     "next-seo": "^5.15.0",
     "react": "^18.2.0",
-    "react-animated-slider": "^2.0.0",
+    "react-animated-slider": "^1.1.4",
     "react-countup": "^6.4.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
