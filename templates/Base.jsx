@@ -14,7 +14,7 @@ const Base = () => (
   <motion.div
     exit={{ opacity: 0 }}
     style={{ margin: "10px" }}
-    className="antialiased text-gray-600"
+    className="antialiased "
   >
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
