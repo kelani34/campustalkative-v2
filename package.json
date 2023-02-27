@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "aos": "^2.3.4",
+    "emotion": "^11.0.0",
     "framer-motion": "^10.0.0",
+    "mui": "^0.0.1",
     "next": "13.2.1",
     "next-google-fonts": "^2.2.0",
     "next-seo": "^5.15.0",

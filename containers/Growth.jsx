@@ -34,6 +34,8 @@ const Growth = () => {
             src={DecorativeLine}
             className="line"
             alt="Decorative line graphic"
+            style={{ width: "39%" }}
+            height="auto"
           />
           <Image src={WorldMap} className="earth" alt="World map" />
           <Image src={WorldMapsm} className="earth-sm" alt="Small world map" />
@@ -93,11 +95,6 @@ const Section = styled.section`
       display: block;
       margin-left: -20px;
       margin-top: 0;
-    }
-  }
-  img {
-    @media screen and (max-width: 650px) {
-      width: 100%;
     }
   }
 `;

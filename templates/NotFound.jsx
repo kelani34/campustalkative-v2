@@ -1,16 +1,10 @@
-import { ContactComponent, Footer, Navbar } from "@/components";
-import {
-  Collaborations,
-  Community,
-  CommunitySlider,
-  Growth,
-  HeroSection,
-} from "@/containers";
+import { Footer, Navbar } from "@/components";
+import { PageNotFound } from "@/containers";
 import { Meta } from "@/layout/Meta";
 import { AppConfig } from "@/utils/AppConfig";
 import { motion } from "framer-motion";
 
-const Base = () => (
+const NotFound = () => (
   <motion.div
     exit={{ opacity: 0 }}
     style={{ margin: "10px" }}
@@ -18,14 +12,9 @@ const Base = () => (
   >
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
-    <HeroSection />
-    <Collaborations />
-    <Growth />
-    <Community />
-    <CommunitySlider />
-    <ContactComponent />
+    <PageNotFound />
     <Footer />
   </motion.div>
 );
 
-export default Base;
+export default NotFound;

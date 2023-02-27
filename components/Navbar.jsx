@@ -67,7 +67,7 @@ const Navbar = (props) => {
             </div>
           </IconContext.Provider>
           <div className="cta__navbar-items-btn">
-            <Link href="/comunity">
+            <Link href="/community">
               <Button text="Join community" />
             </Link>
           </div>
