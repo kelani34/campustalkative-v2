@@ -8,4 +8,13 @@ module.exports = {
     config.resolve.alias["@"] = path.join(__dirname);
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };

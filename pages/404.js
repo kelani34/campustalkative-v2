@@ -1,5 +1,5 @@
 import { NotFound } from "@/templates";
 
-const Index = () => <Base />;
+const Page404 = () => <NotFound />;
 
-export default NotFound;
+export default Page404;
